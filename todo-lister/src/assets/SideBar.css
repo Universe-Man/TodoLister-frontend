@@ -1,0 +1,51 @@
+.SideBar {
+  height: 500px;
+  width: 200px;
+  border-style: dashed;
+  border-color: blue;
+  padding: 10px;
+}
+
+.SideBar-button {
+  height: 30px;
+  width: 125px;
+  font-size: 14px;
+}
+
+.New-List-Form-Input {
+  width: 155px;
+  height: 20px;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+
+
+
+
+/*
+
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: dashed;
+  border-color: red;
+  height: 40px;
+  width: 200px;
+  padding: 10px;
+}
+
+.SearchBar-input {
+  width: 175px;
+  height: 25px;
+  font-size: 18px
+}
+
+
+padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px; */

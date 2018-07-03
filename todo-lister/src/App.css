@@ -1,0 +1,80 @@
+.PendingItems {
+  border-style: dashed;
+  border-color: orange;
+  width: 700px;
+  height: 300px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.CompletedItems {
+  border-style: dashed;
+  border-color: green;
+  width: 700px;
+  height: 250px;
+  position: absolute;
+  top: 325px;
+  left: 15px;
+}
+
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: dashed;
+  border-color: red;
+  height: 40px;
+  width: 200px;
+  padding: 10px;
+}
+
+.SearchBar-input {
+  width: 175px;
+  height: 25px;
+  font-size: 18px
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ListDisplay {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  position: absolute;
+  top: 75px;
+  left: 225px;
+  align-items: flex-end;
+  border-style: dashed;
+  border-color: purple;
+  width: 710px;
+  height: 565px;
+  padding: 10px
+}
