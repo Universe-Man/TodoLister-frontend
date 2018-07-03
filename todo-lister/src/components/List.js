@@ -1,8 +1,9 @@
 import React from 'react';
 
 const List = (props) => {
+  debugger
   return(
-    <div onClick={() => {return props.displayCurrentList(props.list)}}>
+    <div onClick={() => props.displayCurrentList(props.list)}>
       {props.list}
     </div>
 
