@@ -10,6 +10,7 @@ class ListContainer extends React.Component{
     this.state = {
       searchTerm: "",
       lists: [],
+      currentList: ""
     }
   }
 
@@ -31,9 +32,9 @@ class ListContainer extends React.Component{
   }
 
   displayCurrentList = (list) => {
-    // console.log('oh hi there!');
-   console.log('this is the list I clicked on and want to send to display', list);
-    return list;
+    this.setState({
+      currentList: list
+    })
   }
 
   render(){
@@ -41,7 +42,7 @@ class ListContainer extends React.Component{
       <div>
         <SearchBar getSearchTerm={this.getSearchTerm}/>
         <SideBar lists={this.filterLists()} createNewList={this.createNewList} displayCurrentList={this.displayCurrentList}/>
-        <ListDisplay list={this.displayCurrentList()}/>
+        <ListDisplay list={this.state.currentList}/>
       </div>
     )
   }

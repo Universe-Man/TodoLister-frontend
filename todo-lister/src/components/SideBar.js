@@ -45,8 +45,9 @@ class SideBar extends React.Component{
 
   render(){
     // console.log('id in the render', this.state.listId);
+    let n = 0
     let allTheLists = this.props.lists.map(list => {
-      return <List list={list} displayCurrentList={this.props.displayCurrentList}/>
+      return <List list={list} key={++n} displayCurrentList={this.props.displayCurrentList}/>
     })
     let allTheListsBackwards = allTheLists.reverse()
 

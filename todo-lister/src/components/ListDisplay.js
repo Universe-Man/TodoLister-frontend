@@ -11,12 +11,10 @@ class ListDisplay extends React.Component{
   }
 
   render(){
-    console.log('look at me', this.props.list);
     return(
       <div className="ListDisplay">
-        <p>{this.props.list}</p>
-        <PendingItems />
-        <CompletedItems />
+        <PendingItems list={this.props.list}/>
+        <CompletedItems list={this.props.list}/>
 
 
       </div>

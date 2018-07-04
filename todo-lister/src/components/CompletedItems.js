@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CompletedItems = () => {
+const CompletedItems = (props) => {
   return(
-    <div className='CompletedItems'>CompletedItems</div>
+    <div className='CompletedItems'>{props.list}</div>
   )
 }
 
